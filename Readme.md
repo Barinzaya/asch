@@ -4,11 +4,17 @@
 
 This is a very lightweight utility intended to be used with [AssettoServer](https://github.com/compujuckel/AssettoServer), to add the necessary key for cars that are intended for use as traffic.
 
+## How do I use it?
+
+Put the executable in the same directory as your AssettoServer executable, and run it whenever your server config is updated.
+
+Make sure you set up your config in CM to identify which cars you want used as traffic; see below.
+
 ## Why?
 
 Because every time the entry list is re-packed via Content Manager, the entry list has to be manually edited to re-add the key to cars that are intended for use as traffic. This tool allows the info that CM *does* support (the entry's team name) to be used to indicate which cars should be used as traffic.
 
-## How?
+## How does it choose?
 
 When run, it will look for the entry list (in `cfg/entry_list.ini`), read its contents, and look for any cars that meet any of the following criteria:
 
