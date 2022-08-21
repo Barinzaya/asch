@@ -1,0 +1,16 @@
+[package]
+name = "mark-ai-traffic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+rfd = "0.10"
+rust-ini = "0.18"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+panic = "abort"
+strip = true
