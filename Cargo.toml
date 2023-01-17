@@ -1,12 +1,19 @@
 [package]
-name = "mark-ai-traffic"
-version = "0.1.0"
+name = "asch"
+description = "A utility to automatically help apply some necessary config changes for AssettoServer-based setups."
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]
 anyhow = "1"
 rfd = "0.10"
 rust-ini = "0.18"
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+time = { version = "0.3", features = ["macros", "parsing"], default-features = false }
+
+[profile.dev.package."*"]
+opt-level = 2
 
 [profile.release]
 codegen-units = 1

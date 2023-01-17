@@ -1,0 +1,6 @@
+# Whether to scan the entry list and mark probable traffic cars as traffic
+mark-traffic: false
+
+# The time of day to set in the server configuration file.
+# Remove the # at the start of the line to activate!
+# time: 23:00
